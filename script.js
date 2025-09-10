@@ -246,3 +246,10 @@ function restart() {
   goTown();
 }
 
+function guess(pick){
+  const numbers=[];
+  while(numbers.length<10){
+    numbers.push(Math.floor(Math.random()*11));
+  }
+  text.innerText="You picked " + guess + "here are the random numbers:\n";
+}
